@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:medicalcase/core/components/customtextfield.dart';
-import 'package:medicalcase/view/authenticate/homepage/homepageforusers.dart';
 import 'package:medicalcase/view/authenticate/register/register.dart';
+import 'package:medicalcase/view/homepage/homepageforusers.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
