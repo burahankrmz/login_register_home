@@ -156,31 +156,34 @@ class _RegisterPageState extends State<RegisterPage> {
                       minWidth: MediaQuery.of(context).size.width,
                       height: MediaQuery.of(context).size.height / 14,
                     ),
-                    Row(
-                      children: [
-                        const Text(
-                          'Zaten üye misiniz?',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 15.0,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => LoginPage()));
-                          },
-                          child: const Text(
-                            'Giriş Yap',
+                    Positioned(
+                      bottom: 10.0,
+                      child: Row(
+                        children: [
+                          const Text(
+                            'Zaten üye misiniz?',
                             style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 15.0,
+                                color: Colors.black,
+                                fontSize: 15.0,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => LoginPage()));
+                            },
+                            child: const Text(
+                              'Giriş Yap',
+                              style: TextStyle(
+                                color: Colors.blue,
+                                fontSize: 15.0,
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ],
                 ),

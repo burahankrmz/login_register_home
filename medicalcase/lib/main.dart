@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medicalcase/view/authenticate/login/login.dart';
-import 'package:medicalcase/view/authenticate/register/register.dart';
+
+import 'view/homepage/homepageforusers.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: LoginPage(),
+        body: Home(),
       ),
     );
   }

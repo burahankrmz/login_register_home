@@ -68,10 +68,8 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Home()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Home()));
                         },
                         child: const Text(
                           'Giriş Yap',
@@ -95,31 +93,34 @@ class _LoginPageState extends State<LoginPage> {
                         left: 8.0,
                         top: 140.0,
                       ),
-                      child: Row(
-                        children: [
-                          const Text(
-                            'Üyemiz değil misin?',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15.0,
-                                fontWeight: FontWeight.bold),
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => RegisterPage()));
-                            },
-                            child: const Text(
-                              'Kayıt Ol',
+                      child: Positioned(
+                        bottom: 10.0,
+                        child: Row(
+                          children: [
+                            const Text(
+                              'Üyemiz değil misin?',
                               style: TextStyle(
-                                color: Colors.blue,
-                                fontSize: 15.0,
+                                  color: Colors.black,
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => RegisterPage()));
+                              },
+                              child: const Text(
+                                'Kayıt Ol',
+                                style: TextStyle(
+                                  color: Colors.blue,
+                                  fontSize: 15.0,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     )
                   ],
